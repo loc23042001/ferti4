@@ -1,0 +1,126 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="style3.css">	
+ <script>
+  function random()
+  {
+     var a=document.getElementById("cycle").value;
+     if(a==="1")
+        {
+          var arr=["1"];
+		  
+        }
+     else if(a==="2")
+        {
+          var arr=["1","2"];
+        }
+	 else if(a==="3")
+        {
+          var arr=["1","2","3"];
+        }
+	 else if(a==="4")
+        {
+          var arr=["1","2","3","4"];
+        }
+	 else{
+		  var arr=["1","2","3","4","5"];
+		}
+  var string="";
+  string="<option>"+"....."+"</option>";
+  for(i=0;i<arr.length;i++)
+   {
+    string=string+"<option value="+arr[i]+">"+arr[i]+"</option>";
+   }
+    document.getElementById("No").innerHTML=string;
+	/*--------------------------*/
+var string1="";
+ string1="<option>"+"....."+"</option>";
+var arr1=["1","2","3","4","5","6","7","8","9","10"];
+for(i=0;i<10;i++)
+   {
+	string1=string1+"<option value="+arr1[i]+">"+arr1[i]+"</option>";
+   }
+	document.getElementById("number1").innerHTML=string1;
+
+/*--------------------------*/
+var string2="";
+ string2="<option>"+"....."+"</option>";
+var arr2=["on","off"];
+for(i=0;i<2;i++)
+   {
+	string2=string2+"<option value="+arr2[i]+">"+arr2[i]+"</option>";
+   }
+	document.getElementById("valve1").innerHTML=string2;
+
+/*----------------------*/
+var string3="";
+ string3="<option>"+"....."+"</option>";
+var arr3=["on","off"];
+for(i=0;i<2;i++)
+   {
+	string3=string3+"<option value="+arr3[i]+">"+arr3[i]+"</option>";
+   }
+	document.getElementById("valve2").innerHTML=string3;
+
+/*----------------------*/
+var initialValue = '';
+var query = document.getElementById('fname1');
+query.value = initialValue;
+var query = document.getElementById('fname2');
+query.value = initialValue;
+var query = document.getElementById('fname3');
+query.value = initialValue;
+var query = document.getElementById('fname');
+query.value = initialValue;
+var query = document.getElementById('EC');
+query.value = initialValue;
+ }
+</script>
+</head>
+<body>
+<div class ="intro">
+<b>
+FERTIGATION
+</b>
+</div>
+<div class="bg1">
+<label for="appt">Select start time:</label>
+<input type="time" id="appt" name="appt">
+  Number of cycle: <input type="text" id="cycle" onchange="random()" placeholder=".........">
+  <br/>
+        <div>
+         Cycle No:
+           <select id="No" onchange="random1()"><option>.....</option></select>
+        </div>
+        <div>
+    START TIME:
+  <select id="number1" onchange="random2()"><option>.....</option></select>
+  </div>
+    <label for="min_time">min time:</label>
+    <input type="text" id="fname1"   placeholder=".........">h
+    <input type="text" id="fname2"  placeholder=".........">min
+   
+<br/>
+<div>
+         valve1:
+           <select id="valve1" onchange="random3()"><option>.....</option></select>
+        </div>
+    <div>
+         valve2:
+      <select id="valve2" onchange="random4()"><option>.....</option></select>
+  </div>
+<label for="target pH">target_pH:</label>
+    <input type="text" id="fname" name="pH" placeholder=".........">pH
+   <br/>
+   <label for="target EC">target EC:</label>
+    <input type="text" id="EC" name="EC" placeholder=".........">uS/m
+</div>
+<div class="submit">
+<a href="menu.html">SAVE AND RETURN</a>
+</div>
+</body>
+</html>

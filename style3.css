@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+.bg1{
+	position: absolute;
+	background-color: rgb(240,240,240);
+	padding: 10px;
+	left: 493px;
+	top: 219px;
+	border: 4px solid black;
+	width: 227px;
+}
+.intro{
+	font-size: 50px;
+	position: absolute;
+	left: 448px;
+	top: 147px;
+}
+.submit a{
+	border-radius: 5px;
+	text-align: center;
+	background-color: #f2f2f2;
+	padding: 10px;
+	position: absolute;
+	left: 524px;
+	top: 439px;
+	width: 177px;
+}
+.submit a:hover{
+	text-align:center;
+	color:white;
+	cursor:pointer;
+	transition:1s ease;
+	background-color:rgb(0,204,0);
+	padding: 10px;
+	border-radius: 5px;
+}
+#fname1{
+	width:30px;
+}
+#fname2{
+	width:30px;
+}
+#fname3{
+	width:30px;
+}
+#valve1{
+	width:40px;
+}
+#valve2{
+	width:40px;
+}
+#fname{
+	width:30px;
+}
+#EC{
+	width:30px;
+}
+#cycle{
+	width:30px;
+}
+i{
+	color:rgb(51,153,255);
+}
